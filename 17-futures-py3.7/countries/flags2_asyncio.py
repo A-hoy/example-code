@@ -51,7 +51,7 @@ async def download_one(session, cc, base_url, semaphore, verbose):  # <3>
         status = HTTPStatus.ok
         msg = 'OK'
 
-    if verbose and msg:
+    if verbose:
         print(cc, msg)
 
     return Result(status, cc)
